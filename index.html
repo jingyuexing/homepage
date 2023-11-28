@@ -1,38 +1,84 @@
 <!DOCTYPE html>
-<style>
-    body {
-      background-image: url('bg.jpg');
-      background-attachment: fixed;
-      background-size: cover;
-    }
+<html lang="en">
 
-    .header {
-        padding-top: 50px;
-        margin: auto;
-        width: 60%;
-        font-family: Arial,Helvetica,sans-serif;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boson</title>
+    <style>
+        body {
+            background-image: url('bg.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        h1 {
+            font-size: 110px;
+            color: #fff;
+        }
 
-    h1 {
-        font-size: 110px;
-        color: #fff;
-    }
-    h2 {
-        font-size: 80px;
-        color: #aaa;
-    }
+        h2 {
+            font-size: 80px;
+            color: #aaa;
+        }
 
+        * {
+            padding: 0;
+            margin: 0;
+        }
 
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .backdrop-filter {
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+        }
+
+        .clip {
+            background: linear-gradient(to right, #3abaea, #ed35d4);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .w-53\% {
+            width: 53%;
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .h-100vh {
+            height: 100vh;
+        }
     </style>
+</head>
 
-<html>
 <body>
-
-    <div class="header">
-    <h1>Large Models for All</h1>
-    <h2>We're building something big...</h2>
-    <h2>Stay tuned! </h2>
-    <div>
+    <div class="main mx-auto w-53% flex items-center justify-center h-100vh">
+        <div class="slogn">
+            <h1>Large Models for <span class="clip">All</span></h1>
+            <h2>We're <span class="clip">building</span> something big...</h2>
+            <h2>Stay tuned! </h2>
+        </div>
+    </div>
 </body>
+
 </html>
